@@ -1,7 +1,7 @@
 {
-  "name": "valiquire",
+  "name": "vue-valiquire",
   "version": "0.3.0",
-  "description": "Validates that all require statements in a project point to an existing path and are correctly cased.",
+  "description": "A fork of Validates",
   "main": "valiquire.js",
   "bin": {
     "valiquire": "./bin/valiquire.js"
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/thlorenz/valiquire.git"
+    "url": "git://github.com/chiaweilee/vue-valiquire"
   },
   "keywords": [
     "require",

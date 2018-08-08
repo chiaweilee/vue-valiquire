@@ -29,7 +29,7 @@ module.exports = function (root, redirect, cb) {
     , notOk = colors.red('\u2639 ') 
     , ok = colors.brightGreen('\u00b7');
 
-  readdirp({ root: root, fileFilter: '*.js', directoryFilter: directoryFilter })
+  readdirp({ root: root, fileFilter: ['*.js', '*.vue'/* +v fork+ */], directoryFilter: directoryFilter })
     .on('error', function (err) { 
       cb(new Error('When reading ' + root + ':\n' + err.message));
     })
