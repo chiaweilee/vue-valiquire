@@ -1,6 +1,6 @@
 'use strict';
 
-var detective   =  require('detective')
+var detective   =  require('detective-es6')
   , fs          =  require('fs')
   , path        =  require('path')
   , format      =  require('util').format
