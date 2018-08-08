@@ -1,14 +1,11 @@
-# valiquire [![build status](https://secure.travis-ci.org/thlorenz/valiquire.png)](http://travis-ci.org/thlorenz/valiquire)
+# Fork TODO
 
-Validates that all require statements in a project point to an existing path and are correctly cased.
-
-![screenshot](https://raw.github.com/thlorenz/valiquire/master/assets/screenshot.jpg)
-
-*screenshot condensed for brevity*
+- Support .vue
+- Support ES6 import
 
 ## Installation
 
-`npm -g install valiquire`
+`npm -g install vue-valiquire`
 
 ## Usage 
 
