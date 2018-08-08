@@ -16,11 +16,11 @@ module.exports = function (root, redirect, cb) {
     fs.readFile(entry.fullPath, 'utf-8', function (err, res) {
         if (err) return console.error(err);
         if (/.vue$/i.test(entry.fullPath)) { /* +v fork+ */
-            cb(null, { fullPath: entry.fullPath, src:
-                (function () {
-                    return /<script[^>]*?>([\s\S]*?)<\/script>/i.exec(res) || [null, ''];
-                })()[1]
-            });
+            var _res = (function () {
+                return /<script[^>]*?>([\s\S]*?)<\/script>/i.exec(res) || [null, false]
+            })()[1];
+            if (!_res) return;
+            cb(null, { fullPath: entry.fullPath, src: _res});
             return;
         }
         cb(null, { fullPath: entry.fullPath, src: res });
