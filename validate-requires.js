@@ -1,6 +1,6 @@
 'use strict';
 
-var detective   =  require('detective-es6')
+var detective   =  require('detective-es6') /* +v fork+ */
   , fs          =  require('fs')
   , path        =  require('path')
   , format      =  require('util').format
